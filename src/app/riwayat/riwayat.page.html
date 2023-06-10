@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Welcome {{form.nama}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-list lines="inset">
+      <ion-item>
+        <ion-label>NAMA : {{form.nama}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>NIK :  {{form.nik}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>ALAMAT : {{form.alamat}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>TEMPAT TANGGAL LAHIR : {{form.ttl}}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="sendToEmail()">Send To Email</ion-button>
+  
+  </div>
+  
+</ion-content>

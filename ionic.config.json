@@ -1,0 +1,7 @@
+{
+  "name": "PraktekMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

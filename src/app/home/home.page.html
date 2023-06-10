@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home Page</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item>
+      <ion-input
+        label="Nama"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="Enter text"
+        [(ngModel)]="form.nama"
+      >
+      </ion-input>
+    </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-input
+      label="NIK"
+      labelPlacement="stacked"
+      [clearOnEdit]="true"
+      placeholder="Enter text"
+      [(ngModel)]="form.nik"
+    >
+    </ion-input>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-input
+      label="Alamat"
+      labelPlacement="stacked"
+      [clearOnEdit]="true"
+      placeholder="Enter text"
+      [(ngModel)]="form.alamat"
+    >
+    </ion-input>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-input
+      label="Tempat Tanggal Lahir"
+      labelPlacement="stacked"
+      [clearOnEdit]="true"
+      placeholder="Enter text"
+      [(ngModel)]="form.ttl"
+    >
+    </ion-input>
+  </ion-item>
+  <br>
+  <ion-button (click)="doRiwayat()">Submit</ion-button>
+  <br>
+  <br>
+  
+ 
+    <ion-button (click)="doRiwayat()">Send To Whatsaap</ion-button>
+    <ion-button>Send To Telegram</ion-button>
+    
+  
+  </div>
+  
+  
+</ion-content>
